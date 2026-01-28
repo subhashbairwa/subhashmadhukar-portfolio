@@ -111,7 +111,7 @@ const Hero = () => {
               GitHub
             </a>
             <a
-              href="#"
+              href="https://drive.google.com/file/d/1jzujBiTZ7aeFfGXcdIPa5EPHDBeLwE-3/view?usp=sharing"
               className="group inline-flex items-center gap-2 glass-card px-6 py-3 rounded-full font-medium text-foreground transition-all duration-300 hover:border-accent/50 hover:scale-105"
             >
               <FileText size={18} />
