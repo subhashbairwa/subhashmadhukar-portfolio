@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, FileText, Eye } from "lucide-react";
+import { ArrowDown, Github, FileText, Eye, Code } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const Hero = () => {
@@ -116,6 +116,15 @@ const Hero = () => {
             >
               <FileText size={18} />
               Download Resume
+            </a>
+            <a
+              href="https://leetcode.com/u/subhashMadhukar/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2 glass-card px-6 py-3 rounded-full font-medium text-foreground transition-all duration-300 hover:border-primary/50 hover:scale-105"
+            >
+              <Code size={18} />
+              LeetCode
             </a>
           </motion.div>
         </div>

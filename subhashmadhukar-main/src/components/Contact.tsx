@@ -11,6 +11,13 @@ const contactLinks = [
     color: "primary",
   },
   {
+    name: "Phone",
+    value: "+91-9660200340",
+    href: "tel:+919660200340",
+    icon: Github,
+    color: "accent",
+  },
+  {
     name: "GitHub",
     value: "github.com/subhashbairwa",
     href: "https://github.com/subhashbairwa",

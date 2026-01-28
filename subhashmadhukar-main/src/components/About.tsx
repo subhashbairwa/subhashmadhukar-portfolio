@@ -71,12 +71,14 @@ const About = () => {
             className="glass-card p-8 md:p-12 mb-16"
           >
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-center">
-              Passionate product engineer focused on building{" "}
-              <span className="text-foreground font-medium">scalable real-world systems</span>,
-              solving complex problems, and crafting{" "}
-              <span className="text-foreground font-medium">high-quality user experiences</span>.
-              Strong experience in full-stack development, real-time systems, backend APIs,
-              authentication, payments, and production debugging.
+              Final year{" "}
+              <span className="text-foreground font-medium">B.Tech Chemical Engineering</span> student at{" "}
+              <span className="text-foreground font-medium">IIT Jodhpur</span>, passionate about{" "}
+              <span className="text-foreground font-medium">full-stack development</span> and{" "}
+              <span className="text-foreground font-medium">building scalable solutions</span>.
+              Focused on problem-solving through coding and crafting{" "}
+              <span className="text-foreground font-medium">high-quality applications</span>.
+              Strong foundation in full-stack development, system design, and DSA.
             </p>
           </motion.div>
 
