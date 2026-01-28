@@ -74,3 +74,4 @@ To trigger a new deployment:
 - Add a custom domain (optional)
 - Set up automatic redeploys on git push (automatic by default)
 - Configure environment variables for production if needed
+cd subhashmadhukar-main
