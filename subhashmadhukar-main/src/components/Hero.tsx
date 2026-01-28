@@ -40,29 +40,49 @@ const Hero = () => {
       />
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 glass-card px-4 py-2 mb-8"
-          >
-            <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-            <span className="text-sm text-muted-foreground">Available for opportunities</span>
-          </motion.div>
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-12">
+            {/* Profile Photo - Left Side */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+              className="relative w-64 h-64 md:w-72 md:h-72 flex-shrink-0"
+            >
+              {/* Colorful Border Gradient */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary via-accent to-primary p-1">
+                <img
+                  src="/profile-portfolio.jpeg"
+                  alt="Subhash Madhukar"
+                  className="w-full h-full rounded-full object-cover bg-secondary"
+                />
+              </div>
+            </motion.div>
 
-          {/* Name */}
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-4"
-          >
-            <span className="gradient-text">Subhash</span>
-            <br />
-            <span className="text-foreground">Madhukar</span>
-          </motion.h1>
+            {/* Content - Right Side */}
+            <div className="flex-1 text-center md:text-left">
+              {/* Badge */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="inline-flex items-center gap-2 glass-card px-4 py-2 mb-8"
+              >
+                <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+                <span className="text-sm text-muted-foreground">Available for opportunities</span>
+              </motion.div>
+
+              {/* Name */}
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-4"
+              >
+                <span className="gradient-text">Subhash</span>
+                <br />
+                <span className="text-foreground">Madhukar</span>
+              </motion.h1>
 
           {/* Title */}
           <motion.p
@@ -92,7 +112,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-wrap justify-center gap-4"
+            className="flex flex-wrap justify-center md:justify-start gap-4"
           >
             <a
               href="#projects"
@@ -127,6 +147,8 @@ const Hero = () => {
               LeetCode
             </a>
           </motion.div>
+            </div>
+          </div>
         </div>
 
         {/* Scroll Indicator */}
