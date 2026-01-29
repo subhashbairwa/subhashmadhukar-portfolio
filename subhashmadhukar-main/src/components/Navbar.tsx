@@ -5,8 +5,10 @@ import { Menu, X, Github, Linkedin, Mail } from "lucide-react";
 const navLinks = [
   { name: "About", href: "#about" },
   { name: "Projects", href: "#projects" },
+  { name: "AI Challenge", href: "#ai-challenge" },
   { name: "Skills", href: "#skills" },
   { name: "Experience", href: "#experience" },
+  { name: "AI Review", href: "#ai-review" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -55,12 +57,12 @@ const Navbar = () => {
         </motion.a>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-12">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className={`relative text-sm font-medium transition-colors duration-300 ${
+              className={`relative text-sm font-medium transition-colors duration-300 whitespace-nowrap ${
                 activeSection === link.href.slice(1)
                   ? "text-primary"
                   : "text-muted-foreground hover:text-foreground"

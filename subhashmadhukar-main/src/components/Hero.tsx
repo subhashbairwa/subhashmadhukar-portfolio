@@ -39,28 +39,37 @@ const Hero = () => {
         }}
       />
 
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-12">
+      <div className="container mx-auto px-6 relative z-10 overflow-hidden">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center justify-start gap-12 md:gap-20">
             {/* Profile Photo - Left Side */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
-              className="relative w-64 h-64 md:w-72 md:h-72 flex-shrink-0"
+              className="relative w-64 h-52 md:w-80 md:h-64 flex-shrink-0 order-first"
             >
               {/* Colorful Border Gradient */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary via-accent to-primary p-1">
-                <img
-                  src="/profile-portfolio.jpeg"
-                  alt="Subhash Madhukar"
-                  className="w-full h-full rounded-full object-cover bg-secondary"
-                />
-              </div>
+              <div className="relative w-72 h-72 rounded-full overflow-hidden">
+  {/* Gradient Border */}
+  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary via-accent to-primary p-[4px]">
+    
+    {/* Inner Circle */}
+    <div className="w-full h-full rounded-full bg-secondary flex items-center justify-center overflow-hidden">
+      <img
+        src="/sb1.jpeg"
+        alt="Subhash Madhukar"
+        className="w-full h-full object-contain rounded-full"
+      />
+    </div>
+
+  </div>
+</div>
+
             </motion.div>
 
             {/* Content - Right Side */}
-            <div className="flex-1 text-center md:text-left">
+            <div className="flex-1 text-center md:text-left max-w-2xl">
               {/* Badge */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -91,7 +100,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl md:text-2xl text-muted-foreground mb-6"
           >
-            Entry-Level Product Engineer | Full Stack Developer
+           Full Stack Developer 
           </motion.p>
 
           {/* Typing Tagline */}

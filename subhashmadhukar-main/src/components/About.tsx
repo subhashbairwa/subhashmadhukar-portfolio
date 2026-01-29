@@ -82,6 +82,20 @@ const About = () => {
             </p>
           </motion.div>
 
+          {/* IIT Jodhpur Image */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="mb-16 rounded-2xl overflow-hidden glass-card p-1 max-w-2xl mx-auto"
+          >
+            <img
+              src="/image.png"
+              alt="IIT Jodhpur Campus"
+              className="w-full h-auto object-contain rounded-xl"
+            />
+          </motion.div>
+
           {/* Highlight Cards */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {highlights.map((item, index) => (

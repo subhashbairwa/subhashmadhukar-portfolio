@@ -11,10 +11,7 @@ const Footer = () => {
             <span className="text-xl font-display font-bold gradient-text">
               Subhash Madhukar
             </span>
-            <p className="text-sm text-muted-foreground flex items-center gap-1">
-              Built with <Heart size={14} className="text-primary" /> using React &
-              Tailwind CSS
-            </p>
+         
           </div>
 
           {/* Social Links */}
